@@ -1,0 +1,18 @@
+[
+    {
+        "nom" : "Khokh",
+        "prenom" : "Vita",
+        "notes" : [20,19,18]
+    },
+    {
+        "nom" : "X",
+        "prenom" : "x",
+        "notes" : [17,19,18]
+    },
+
+    {
+        "nom" : "Y",
+        "prenom" : "y",
+        "notes" : [15,19,18]
+    }
+]

@@ -1,0 +1,35 @@
+#exemple
+{
+    color: red;
+    font-size: 50%;
+}
+body{
+    background-color: #d0d0d0;
+    font-size: 20pt;}
+
+ a
+{
+    color: blue;
+    font-size:2em;
+}
+
+p{
+border: solid orange}
+
+p a
+{
+    color: green;
+    font-size:4em;
+}
+
+.divClass {
+    color: red;
+}
+
+.spanClass{
+    color: green;
+}
+
+@media all and (max-width: 600px){
+    max-width: 100%;
+}

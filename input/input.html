@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+    <link rel="stylesheet" href="input.css"/>
+ 
+</head>
+<body>
+<form method="post" id="myform">
+    Input data for a book:<br/>
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" id="title" size="50"/>*
+        <span id="errortitle" class="errorClass">Titre vide impossible</span>
+    </div>
+    <div>
+            <label for="price">Price:</label>
+            <input type="number" id="price"  size="5"/>*
+            <span id="errorprice" class="errorClass">Le prix doit être supérieur à zéro</span><br/>
+    </div>
+    <div>
+            <label for="nbpages">Nombre de pages:</label>
+            <input type="number" id="nbpages"  size="5"/>*
+            <span id="errornbpages" class="errorClass">Vide impossible</span><br/>
+    </div>
+   
+    Authors: <input type="text" name="authors" value="" size="50"/></form>
+    Publisher: <input type="text" name="publisher" value="" size="50"/><br/>
+</form>
+
+<div class='hello'>Hello</div>
+<div>World</div>
+<input type="button" id="changeDiv" value="changeDiv" style="width:100px;height:60px;" ><br/>
+<input type="button" id="toggle" value="toggle" style="width:100px;height:60px;"><br/>
+</body>
+<script language="JavaScript" src="input.js"></script>
+</html>

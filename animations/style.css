@@ -1,0 +1,91 @@
+body, h1, h2, h3, p, ul, li, form{
+    margin: 0;
+    padding: 0;
+}
+
+.containerUnes{
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    flex-flow: row;
+}
+
+.boxLeft{
+    width: 33%;
+    display: flex;
+    flex-flow: column;
+   }
+
+article {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: yellow;
+    position: relative;
+    transition: 0.2s;
+}
+
+.titleUne {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+
+    width: 100%;
+    padding: 10px;
+
+    position: absolute;
+    bottom: -40pt;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+article:hover .titleUne{
+    bottom: 0pt;
+}
+
+#articleUn{
+    background: url('http://www.commeaucinema.com/images/news_insert/undefined_952f22aa35489f33af02d6f22330aa20.jpg') no-repeat center center;
+    background-size: 100%;
+
+}
+
+#articleDeux{
+    background: url('http://israelmagazine.co.il/wp-content/uploads/2017/06/Gal-Gadot-HD-Wallpaper.jpg') no-repeat center center;
+    background-size: 100%;
+
+}
+#articleTrois{
+    background: url('http://fr.web.img2.acsta.net/pictures/16/07/19/16/33/125610.jpg') no-repeat center center;
+    background-size: 100%;
+
+}
+
+#articleUn:hover, #articleDeux:hover, #articleTrois:hover{
+    background-size: 110%;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 700px)  {
+    .containerUnes{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        height: 900px;
+    }
+
+    .containerUnes > article{
+        width: 100%;
+        height: 33%;
+    }
+
+    .containerUnes > div{
+        width: 100%;
+        height: 66%;
+    }
+
+    .containerUnes > div > article{
+        height: 50%;
+    }
+}
+

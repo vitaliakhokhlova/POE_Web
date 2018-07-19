@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <script language="JavaScript" src="js/mylibrary.js"></script>
+    <script language="JavaScript">
+    var i =1;
+    function color(){
+       if(document.bgColor=='red') {document.bgColor='green';}
+       else {document.bgColor='red';}
+     }
+     function loop(){
+      for (var i = 1; i < 13; i++){
+            document.write(i + '<br/>');
+        }
+     }
+     function compteur(){
+        document.open();
+        document.write('<center><font size="200">' + (i++) + '</font><br/></center>');
+        document.write( '<center><input type="button" value="OK" style="width:100px;height:60px;" onclick="compteur()"><br/></center>');
+        document.close();
+     }
+    </script>
+</head>
+<body>
+<!-- <font size="5">
+    Hidden stops
+    Hidden stops are non-stop codons that would be read as stop codons if they were frameshifted +1 or −1. These prematurely terminate translation if the corresponding frame-shift (such as due to a ribosomal RNA slip) occurs before the hidden stop. It is hypothesised that this decreases resource waste on nonfunctional proteins and the production of potential cytotoxins. Researchers at Louisiana State University propose the ambush hypothesis, that hidden stops are selected for. Codons that can form hidden stops are used in genomes more frequently compared to synonymous codons that would otherwise code for the same amino acid. Unstable rRNA in an organism correlates with a higher frequency of hidden stops.[14] This hypothesis however could not be validated with a larger data set.[15]
+
+    Stop-codons and hidden stops together are collectively referred as stop-signals. Researchers at University of Memphis found that the ratios of the stop-signals on the three reading frames of a genome (referred to as translation stop-signals ratio or TSSR) of genetically related bacteria, despite their great differences in gene contents, are much alike. This nearly identical Genomic-TSSR value of genetically related bacteria may suggest that bacterial genome expansion is limited by their unique stop-signals bias of that bacterial species.[16]
+
+    Translational readthrough
+    Stop codon suppression or translational readthrough occurs when in translation a stop codon is interpreted as a sense codon, that is, when a (standard) amino acid is 'encoded' by the stop codon. Mutated tRNAs can be the cause of readthrough, but also certain nucleotide motifs close to the stop codon. Translational readthrough is very common in viruses and bacteria, and has also been found as a gene regulatory principle in humans, yeasts, bacteria and drosophila.[17][18] This kind of endogenous translational readthough constitutes a variation of the genetic code, because a stop codon codes for an amino acid. In the case of human malate dehydrogenase, the stop codon is read through with a frequency of about 4%.[19] The amino acid inserted at the stop codon depends on the identity of the stop codon itself: Gln, Tyr, and Lys have been found for the UAA and UAG codons, while Cys, Trp, and Arg for the UGA codon have been identified by mass spectrometry.[20]
+
+    Nonstop mutations
+
+    A nonstop mutation is a point mutation that occurs within a stop codon. Nonstop mutations cause the continued translation of an mRNA strand into what should be an untranslated region. Most polypeptides resulting from a gene with a nonstop mutation are nonfunctional due to their extreme length. Nonstop mutations differ from nonsense mutations in that they do not create a stop codon but, instead, delete one.
+
+    Nonstop mutations have been linked with several congenital diseases including congenital adrenal hyperplasia,[21] variable anterior segment dysgenesis,[22] and mitochondrial neurogastrointestinal encephalomyopathy.[23]
+
+    Use as a watermark
+    In 2010 when Craig Venter unveiled the first fully functioning, reproducing cell controlled by synthetic DNA he described how his team used frequent stop codons to create watermarks in RNA and DNA to help confirm the results were indeed synthetic (and not contaminated or otherwise), using it to encode authors' names and website addresses.[24]</font><br/> -->
+    <script language="JavaScript">
+        var tab = new Array(1,2,3,4,5,6,7,8,9,10);
+    </script>
+
+<input type="button" value="Sum" style="width:100px;height:60px;" onclick="document.write('La somme de ' + tab + ' est ' + sum(tab))"><br/>
+<input type="button" value="Max" style="width:100px;height:60px;" onclick="document.write('Le max de ' + tab + ' est ' + maximum(tab))"><br/>
+<input type="button" value="Avg" style="width:100px;height:60px;" onclick="document.write('La moyenne de ' + tab + ' est ' + avg(tab))"><br/>
+<input type="button" value="Primes" style="width:100px;height:60px;" onclick="document.write('Les nombres primaires dans ' + tab + ' sont ' + tab.filter(isPrimeNumber))"><br/>
+
+</body>
+</html>
+
